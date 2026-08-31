@@ -1,0 +1,176 @@
+:root {
+  --paper: #f6f7f9;
+  --surface: #ffffff;
+  --text: #13161b;
+  --muted: #656c75;
+  --blue: #134fe8;
+  --vermilion: #d52d17;
+  --line: rgba(0, 0, 0, 0.08);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --paper: #14161a;
+    --surface: #1c1f25;
+    --text: #eceef2;
+    --muted: #a0a7b2;
+    --blue: #7fa0ff;
+    --vermilion: #ff7a5e;
+    --line: rgba(255, 255, 255, 0.12);
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0 20px 72px;
+  background: var(--paper);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Noto Sans JP",
+    "Yu Gothic", sans-serif;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.01em;
+}
+
+.wrap {
+  max-width: 44rem;
+  margin: 0 auto;
+}
+
+header.site {
+  padding: 44px 0 28px;
+  border-bottom: 1px solid var(--line);
+  margin-bottom: 36px;
+}
+
+.brand {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 10px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.brand .mark {
+  font-family: "Hiragino Mincho ProN", "Yu Mincho", "Noto Serif JP", serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  color: var(--vermilion);
+}
+
+.brand .tag {
+  font-size: 0.875rem;
+  color: var(--muted);
+}
+
+h1 {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  margin: 0 0 8px;
+  letter-spacing: 0.02em;
+}
+
+h2 {
+  font-size: 1.075rem;
+  margin: 40px 0 12px;
+  padding-top: 4px;
+  letter-spacing: 0.02em;
+}
+
+h3 {
+  font-size: 1rem;
+  margin: 28px 0 6px;
+}
+
+p,
+ul,
+ol {
+  margin: 0 0 16px;
+}
+
+ul,
+ol {
+  padding-left: 1.35em;
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+a {
+  color: var(--blue);
+  text-underline-offset: 3px;
+}
+
+strong {
+  font-weight: 600;
+}
+
+.updated {
+  color: var(--muted);
+  font-size: 0.875rem;
+  margin-bottom: 32px;
+}
+
+.lead {
+  font-size: 1.02rem;
+}
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  padding: 22px 24px;
+  margin: 0 0 20px;
+}
+
+.card p:last-child,
+.card ul:last-child {
+  margin-bottom: 0;
+}
+
+.contact-mail {
+  display: inline-block;
+  font-size: 1.075rem;
+  font-weight: 600;
+  margin: 2px 0 10px;
+  word-break: break-all;
+}
+
+.note {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.faq h3 {
+  margin-top: 26px;
+}
+
+.faq h3:first-of-type {
+  margin-top: 0;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid var(--line);
+  margin: 44px 0 28px;
+}
+
+footer.site {
+  color: var(--muted);
+  font-size: 0.875rem;
+  padding-top: 8px;
+}
+
+footer.site a {
+  color: var(--muted);
+}
