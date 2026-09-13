@@ -3,11 +3,32 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>サポート｜MICHIORI 世界の名道を歩く</title>
+    <title>MICHIORI｜歩数で世界の名道を旅する iPhoneアプリ</title>
     <meta
       name="description"
-      content="iOSアプリMICHIORIのサポートページ。お問い合わせ先、よくあるご質問、プライバシーポリシーへの案内です。"
+      content="MICHIORIは、iPhoneのヘルスケアに記録された歩数で熊野古道やアマルフィー海岸の道を進むバーチャル旅行アプリ。到着した土地の風景と物語、スタンプが旅のパスポートに残ります。2つの道は最後まで無料。広告・アカウント登録はありません。"
     />
+    <meta name="apple-itunes-app" content="app-id=6800734656" />
+    <link rel="canonical" href="https://michiori.pages.dev/" />
+    <link rel="icon" href="images/favicon.png" sizes="64x64" />
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
+    <meta name="theme-color" content="#f6f7f9" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#14161a" media="(prefers-color-scheme: dark)" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="MICHIORI" />
+    <meta property="og:url" content="https://michiori.pages.dev/" />
+    <meta property="og:title" content="MICHIORI｜歩数で世界の名道を旅する" />
+    <meta
+      property="og:description"
+      content="いつもの散歩で、熊野古道やアマルフィー海岸を旅しませんか。毎日の歩数で絵地図を進み、到着した土地の風景と物語、スタンプを集めるバーチャル旅行アプリ。2つの道は最後まで無料。"
+    />
+    <meta property="og:image" content="https://michiori.pages.dev/images/ogp.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:locale" content="ja_JP" />
+    <meta name="twitter:card" content="summary_large_image" />
+
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -17,71 +38,257 @@
           <span class="mark">MICHIORI</span>
           <span class="tag">世界の名道を歩く</span>
         </a>
+        <nav class="site-nav" aria-label="ページ内">
+          <a href="#routes">旅できる道</a>
+          <a href="#support">サポート</a>
+          <a href="privacy-policy.html">プライバシー</a>
+        </nav>
       </header>
 
       <main>
-        <h1>サポート</h1>
-        <p class="lead">
-          MICHIORIは、iPhoneのヘルスケアに記録された歩数を、世界各地の名道を進む旅に変えるアプリです。うまく動かないとき、ご意見をお寄せいただくときは、こちらからご連絡ください。
-        </p>
-
-        <h2>お問い合わせ</h2>
-        <div class="card">
-          <p class="note">メールでのみ承っています。</p>
-          <a class="contact-mail" href="mailto:support.michiori@gmail.com">support.michiori@gmail.com</a>
-          <p class="note">
-            個人で開発・運営しているため、お返事までに数日いただくことがあります。不具合のご連絡は、お使いのiPhoneの機種、iOSのバージョン、アプリのバージョン、症状が出たときの操作を書き添えていただけると助かります。
+        <section class="hero">
+          <p class="eyebrow">iPhoneアプリ</p>
+          <h1>毎日の歩数が、<br />世界の旅になる。</h1>
+          <p class="lead">
+            MICHIORIは、iPhoneのヘルスケアに記録された歩数で、熊野古道やアマルフィー海岸の道を進むバーチャル旅行アプリです。いつもの散歩や通勤が、風景と物語、スタンプの残る旅になります。
           </p>
-        </div>
+          <p class="cta">
+            <a class="button" href="https://apps.apple.com/app/id6800734656">App Storeでダウンロード</a>
+          </p>
+          <p class="note cta-note">
+            無料。熊野古道とアマルフィー海岸の道は、最後まで無料で歩けます。広告・アカウント登録はありません。iOS 17以降。
+          </p>
+          <p class="note support-hint">
+            すでにお使いの方で、お困りのことがある方は<a href="#support">サポート</a>へ。
+          </p>
+          <div class="shots hero-shots">
+            <img
+              src="images/screen-journey.jpg"
+              width="660"
+              height="1434"
+              alt="熊野古道・中辺路の旅の画面。高原から牛馬童子口まであと6.7kmと表示されている"
+            />
+            <img
+              src="images/screen-map.jpg"
+              width="660"
+              height="1434"
+              alt="東海道五十三次の絵地図。歩いた道と、これからの道が色分けして描かれている"
+            />
+          </div>
+        </section>
 
-        <h2>よくあるご質問</h2>
-        <div class="faq">
-          <h3>歩いたのに旅が進みません</h3>
+        <section class="steps" id="how">
+          <h2>歩くだけで、旅が進む</h2>
+          <ol class="step-list">
+            <li>
+              <h3>道を選んで、旅を始める</h3>
+              <p>
+                歩きたい一本を選ぶだけで旅が始まります。アプリを開いたまま歩く必要はありません。ヘルスケアに記録された開始後の歩数を距離に換算し、絵地図に進み具合を映します。
+              </p>
+            </li>
+            <li>
+              <h3>到着した土地の物語に出会う</h3>
+              <p>
+                地点に着くと、その場所の風景と歴史を伝える短い読みものが開きます。古道の山里、地中海の町、東海道の宿場。次の地点までの残り距離が、日々の散歩の小さな目安になります。
+              </p>
+            </li>
+            <li>
+              <h3>スタンプと完歩の記録が残る</h3>
+              <p>
+                到着した地点のスタンプと日付が、旅のパスポートに残ります。一本を歩き終えると完歩の印と日数・距離も記録され、気に入った道は何度でも歩き直せます。
+              </p>
+            </li>
+          </ol>
+          <div class="shots">
+            <img
+              src="images/screen-checkpoint.jpg"
+              width="660"
+              height="1434"
+              alt="東海道の箱根宿の読みもの画面。峠の風景画と、宿場の概要・歴史が並んでいる"
+            />
+            <img
+              src="images/screen-passport.jpg"
+              width="660"
+              height="1434"
+              alt="旅のパスポート画面。熊野古道のチェックポイントのスタンプが日付とともに並んでいる"
+            />
+            <img
+              src="images/screen-completed.jpg"
+              width="660"
+              height="1434"
+              alt="熊野古道を歩き終えた画面。完歩の印と、17.0km・4地点の記録が表示されている"
+            />
+          </div>
+        </section>
+
+        <section id="routes">
+          <h2>いま旅できる3つの道</h2>
+          <div class="routes">
+            <article class="route">
+              <img
+                src="images/route-kumano.jpg"
+                width="880"
+                height="587"
+                loading="lazy"
+                alt="熊野古道の杉木立に射し込む光と、苔むした石段"
+              />
+              <div class="route-body">
+                <h3>熊野古道・中辺路</h3>
+                <p class="meta"><span class="price free">無料</span><span>約17km・5地点</span></p>
+                <p>
+                  滝尻王子から継桜王子へ。森と山里をたどる短い区間で、はじめての一本に選びやすい道です。
+                </p>
+              </div>
+            </article>
+
+            <article class="route">
+              <img
+                src="images/route-amalfi.jpg"
+                width="880"
+                height="587"
+                loading="lazy"
+                alt="アマルフィー海岸の遊歩道から見た、崖沿いの町と地中海"
+              />
+              <div class="route-body">
+                <h3>アマルフィー海岸の道</h3>
+                <p class="meta"><span class="price free">無料</span><span>約58km・7地点</span></p>
+                <p>
+                  ヴィエトリからポジターノへ。地中海沿岸の実在する7地点をたどります。58kmはアプリ内の旅の距離で、現地の連続した徒歩ルートではありません。
+                </p>
+              </div>
+            </article>
+
+            <article class="route">
+              <img
+                src="images/route-tokaido.jpg"
+                width="880"
+                height="587"
+                loading="lazy"
+                alt="海沿いの街道から富士山を望む、東海道の風景"
+              />
+              <div class="route-body">
+                <h3>東海道五十三次</h3>
+                <p class="meta"><span class="price">300円・買い切り</span><span>約495km・53宿場</span></p>
+                <p>
+                  日本橋から三条大橋へ。五十三の宿場を訪ねる長い旅です。一度の購入で全区間を歩けます。月額料金はありません。
+                </p>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section id="quiet">
+          <h2>静かに続けられるように</h2>
+          <ul class="quiet-list">
+            <li><strong>広告はありません。</strong>読みものや絵地図の邪魔が入りません。</li>
+            <li><strong>アカウント登録はありません。</strong>メールアドレスも要りません。</li>
+            <li>
+              <strong>位置情報は使いません。</strong>GPSによる追跡は行わず、ヘルスケアから読み取るのは歩数だけです。
+            </li>
+            <li>
+              <strong>ランキングや交流機能はありません。</strong>他人と比べず、自分のペースで歩けます。
+            </li>
+            <li>
+              <strong>毎日歩くよう催促しません。</strong>通知は到着・完歩・接近の3種類だけで、それぞれオフにできます。
+            </li>
+          </ul>
+        </section>
+
+        <section id="faq-start">
+          <h2>はじめての方のよくある質問</h2>
+          <div class="faq">
+            <h3>無料でどこまで使えますか</h3>
+            <p>
+              熊野古道とアマルフィー海岸の道は、地点の物語やスタンプ、完歩の記録まで無料です。東海道五十三次は一度の購入で全区間を楽しめます。月額料金はありません。
+            </p>
+
+            <h3>現地へ行かなくても楽しめますか</h3>
+            <p>
+              はい。日常の散歩や通勤で歩いた分が、選んだ道の進捗になります。現地へ行く必要はなく、位置情報による追跡も行いません。現地での道案内には使えません。
+            </p>
+
+            <h3>アプリを開いたまま歩く必要はありますか</h3>
+            <p>
+              ありません。ヘルスケアに記録された歩数を取り込んで旅に反映します。反映の時刻はiOSの動作状況によって変わります。歩数の読み取り許可が必要です。
+            </p>
+
+            <h3>歩いた記録は外部に送られますか</h3>
+            <p>
+              送られません。歩数はお使いのiPhoneの中だけで使われ、旅の記録はiPhoneとご自身のiCloudにのみ保存されます。詳しくは<a href="privacy-policy.html">プライバシーポリシー</a>をご覧ください。
+            </p>
+          </div>
+          <p class="cta cta-tail">
+            <a class="button" href="https://apps.apple.com/app/id6800734656">App Storeでダウンロード</a>
+          </p>
+          <p class="note cta-note">無料・広告なし・アカウント登録なし。iOS 17以降。</p>
+        </section>
+
+        <hr />
+
+        <section id="support">
+          <h2 class="section-lead">サポート</h2>
           <p>
-            まずヘルスケアAppに今日の歩数が記録されているかご確認ください。記録があるのに進まない場合は、アプリの設定画面の「ヘルスケア」で読み取りの状態を確認し、「歩数を同期」を押してください。読み取りが許可されていないときは、iPhoneの「設定」→「プライバシーとセキュリティ」→「ヘルスケア」→「MICHIORI」で「歩数」をオンにしてください。
+            うまく動かないとき、ご意見をお寄せいただくときは、こちらからご連絡ください。
           </p>
 
-          <h3>アプリを開いていない間も進みますか</h3>
+          <h3 class="sub">お問い合わせ</h3>
+          <div class="card">
+            <p class="note">メールでのみ承っています。</p>
+            <a class="contact-mail" href="mailto:support.michiori@gmail.com">support.michiori@gmail.com</a>
+            <p class="note">
+              個人で開発・運営しているため、お返事までに数日いただくことがあります。不具合のご連絡は、お使いのiPhoneの機種、iOSのバージョン、アプリのバージョン、症状が出たときの操作を書き添えていただけると助かります。
+            </p>
+          </div>
+
+          <h3 class="sub">よくあるご質問</h3>
+          <div class="faq">
+            <h4>歩いたのに旅が進みません</h4>
+            <p>
+              まずヘルスケアAppに今日の歩数が記録されているかご確認ください。記録があるのに進まない場合は、アプリの設定画面の「ヘルスケア」で読み取りの状態を確認し、「歩数を同期」を押してください。読み取りが許可されていないときは、iPhoneの「設定」→「プライバシーとセキュリティ」→「ヘルスケア」→「MICHIORI」で「歩数」をオンにしてください。
+            </p>
+
+            <h4>アプリを開いていない間も進みますか</h4>
+            <p>
+              進みます。歩数の反映はバックグラウンドでも行われ、地点への到着は通知でお知らせします。ただし反映の間隔はiOSに委ねられているため、通知が届くのはおおむね1時間ごとです。すぐに確かめたいときは、アプリを開いて設定画面の「歩数を同期」を押してください。
+            </p>
+
+            <h4>通知が届きません／通知を止めたい</h4>
+            <p>
+              通知は到着・完歩・次の地点への接近の3種類で、アプリの設定画面から種類ごとにオン・オフを切り替えられます。まったく届かない場合は、iPhoneの「設定」→「通知」→「MICHIORI」で通知が許可されているかご確認ください。なお、アプリを開いている間は通知を出さず、画面内の演出でお伝えします。
+            </p>
+
+            <h4>機種変更しても記録は残りますか</h4>
+            <p>
+              同じApple AccountでiCloudをお使いであれば、旅の記録は引き継がれます。新しいiPhoneでアプリを入れ、iCloudにサインインした状態でしばらくお待ちください。iCloudをオフにしている場合、記録はそのiPhoneの中だけに保存されるため、引き継ぎはできません。
+            </p>
+
+            <h4>購入した道が表示されなくなりました</h4>
+            <p>
+              アプリの設定画面にある「購入した道を復元」をお試しください。購入時と同じApple Accountでサインインしている必要があります。買い切りの道は、同じApple Accountであれば追加の費用なくご利用いただけます。
+            </p>
+
+            <h4>歩数や記録は外部に送られますか</h4>
+            <p>
+              送られません。歩数はお使いのiPhoneの中だけで使われ、旅の記録はiPhoneとご自身のiCloudにのみ保存されます。開発者がその内容を受け取ることはありません。詳しくは<a href="privacy-policy.html">プライバシーポリシー</a>をご覧ください。
+            </p>
+
+            <h4>記録をすべて消したい</h4>
+            <p>
+              iPhoneから本アプリを削除すると、端末内の記録は削除されます。iCloud上の複製は、「設定」→ ご自身の名前 →「iCloud」→「iCloudを使用中のApp」から本アプリのデータを削除することで消せます。
+            </p>
+          </div>
+
+          <h3 class="sub">プライバシー</h3>
           <p>
-            進みます。歩数の反映はバックグラウンドでも行われ、地点への到着は通知でお知らせします。ただし反映の間隔はiOSに委ねられているため、通知が届くのはおおむね1時間ごとです。すぐに確かめたいときは、アプリを開いて設定画面の「歩数を同期」を押してください。
+            本アプリが何を扱い、何を扱わないかは<a href="privacy-policy.html">プライバシーポリシー</a>にまとめています。
           </p>
-
-          <h3>通知が届きません／通知を止めたい</h3>
-          <p>
-            通知は到着・完歩・次の地点への接近の3種類で、アプリの設定画面から種類ごとにオン・オフを切り替えられます。まったく届かない場合は、iPhoneの「設定」→「通知」→「MICHIORI」で通知が許可されているかご確認ください。なお、アプリを開いている間は通知を出さず、画面内の演出でお伝えします。
-          </p>
-
-          <h3>機種変更しても記録は残りますか</h3>
-          <p>
-            同じApple AccountでiCloudをお使いであれば、旅の記録は引き継がれます。新しいiPhoneでアプリを入れ、iCloudにサインインした状態でしばらくお待ちください。iCloudをオフにしている場合、記録はそのiPhoneの中だけに保存されるため、引き継ぎはできません。
-          </p>
-
-          <h3>購入した道が表示されなくなりました</h3>
-          <p>
-            アプリの設定画面にある「購入した道を復元」をお試しください。購入時と同じApple Accountでサインインしている必要があります。買い切りの道は、同じApple Accountであれば追加の費用なくご利用いただけます。
-          </p>
-
-          <h3>歩数や記録は外部に送られますか</h3>
-          <p>
-            送られません。歩数はお使いのiPhoneの中だけで使われ、旅の記録はiPhoneとご自身のiCloudにのみ保存されます。開発者がその内容を受け取ることはありません。詳しくは<a href="privacy-policy.html">プライバシーポリシー</a>をご覧ください。
-          </p>
-
-          <h3>記録をすべて消したい</h3>
-          <p>
-            iPhoneから本アプリを削除すると、端末内の記録は削除されます。iCloud上の複製は、「設定」→ ご自身の名前 →「iCloud」→「iCloudを使用中のApp」から本アプリのデータを削除することで消せます。
-          </p>
-        </div>
-
-        <h2>プライバシー</h2>
-        <p>
-          本アプリが何を扱い、何を扱わないかは<a href="privacy-policy.html">プライバシーポリシー</a>にまとめています。
-        </p>
+        </section>
       </main>
 
       <hr />
       <footer class="site">
         <p>
-          <a href="privacy-policy.html">プライバシーポリシー</a>
+          <a href="#support">サポート</a>　<a href="privacy-policy.html">プライバシーポリシー</a>
         </p>
         <p>MICHIORI（個人開発）</p>
       </footer>
