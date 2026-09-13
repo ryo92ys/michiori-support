@@ -35,6 +35,16 @@ grep -n "6800734656" index.html
 
 流入はApp Store ConnectのApp Analyticsの **Web Referrer** で見えます。SNSごとに分けて測りたくなったら、Appleのキャンペーンリンク（`?pt=<プロバイダID>&ct=<キャンペーン名>&mt=8`）へ差し替えてください。`ct` だけを付けても集計されません。
 
+## アクセス計測
+
+**Cloudflare Web Analytics**（2026-09-13に採用）。**このリポジトリのHTMLに計測タグは入っていない。**Cloudflare Pagesのダッシュボードで有効化するとビーコンが自動で挿入される仕組みのため、ソースを探しても見つからないのは正常である。
+
+数字は Cloudflare ダッシュボード → Web Analytics（または Pages プロジェクト `michiori` の Metrics）で見る。取れるのはページビュー、訪問者数、遷移元（リファラー）、国、端末の種類。cookieも端末の識別子も使わないため同意バナーは置いていない。
+
+App Storeボタンのクリックはここでは取れない。そちらは App Store Connect の App Analytics → ソース → Web Referrer に `michiori.pages.dev` として出る。「サイトに何人来たか」をCloudflare、「うち何人がストアへ渡ったか」をWeb Referrerで見て、2つを並べて読む。
+
+Googleアナリティクスは採っていない。cookieのためEEA/UK向けに同意バナーが要ること、同じサイトに「アクセス解析の外部サービスを組み込んでいません」と書いたポリシーを載せていること、gtag.jsが重いことによる。方針を変えるときは `privacy-policy.html` の第10節とアプリ本体側の `docs/privacy-policy.md` を同じ作業で直す。
+
 ## 内容を変えるときに気をつけること
 
 - **プライバシーポリシーの原文**はアプリ本体リポジトリの `docs/privacy-policy.md` です。本文を変えるときは原文と `privacy-policy.html`、最終更新日を同じ作業の中で揃えてください。
